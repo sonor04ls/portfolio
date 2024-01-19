@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+$sp: 430px;
+$tab: 768px;
+$ipPro: 1020px;
+$pc: 1366px;
+$larPc: 1920px;
+$xLarPc: 2560px;
+
+@mixin sp {
+	@media screen and (max-width: $sp) {
+		@content;
+	}
+}
+
+@mixin tab {
+	@media screen and (max-width: $tab) {
+		@content;
+	}
+}
+
+@mixin ipPro {
+	@media screen and (min-width: $ipPro) {
+		@content;
+	}
+}
+
+@mixin pc {
+	@media screen and (min-width: $pc) {
+		@content;
+	}
+}
+
+@mixin larPc {
+	@media screen and (min-width: $larPc) {
+		@content;
+	}
+}
+
+@mixin xLarPc {
+	@media screen and (min-width: $xLarPc) {
+		@content;
+	}
+}
+
+$mainColor: #d3a5a5;
+$bgColor: #F5F5DC;
+$textColor: #333;

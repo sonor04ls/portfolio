@@ -1,0 +1,137 @@
+@import "mixin";
+
+.wrapper {
+	width: 80vw;
+	margin-bottom: 15vh;
+	text-align: center;
+	@include ipPro {
+		width: 70vw;
+	}
+}
+
+.top-image {
+	width: 100%;
+	margin-top: 6vh;
+	@include ipPro {
+		margin-top: 0;
+	}
+}
+
+h2 {
+	font-size: 2.8em;
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+h3 {
+	font-size: 1.6em;
+	text-align: center;
+	white-space: nowrap;
+}
+
+h4 {
+	font-size: 1.2em;
+	text-align: center;
+	margin: 1.2% 0 .5%;
+}
+
+.about {
+	width: 100%;
+	text-align: justify;
+	&-container {
+		width: 75%;
+		margin: 6.5% auto 0;
+	}
+	&-note {
+		width: 100%;
+		margin: 5% auto 0;
+	}
+}
+
+.menu {
+	&-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 75%;
+		margin: 5% auto 0;
+		padding: 1em;
+		border: solid .2em $textColor;
+		background: #fff;
+		@include ipPro {
+			width: 60%;
+		}
+	}
+	&-title {
+		display: flex;
+		font-weight: bold;
+		justify-content: space-around;
+		border-bottom: .1em solid $textColor;
+		width: 90%;
+		margin: 0 auto .5em;
+	}
+	&-list {
+		display: flex;
+		justify-content: space-around;
+		margin: auto;
+		width: 90%;
+		&-ttl {
+			width: 50%;
+		}
+		&-price {
+			width: 50%;
+		}
+	}
+}
+
+.btn {
+	font-size: 1.2em;
+	line-height: 1.5;
+	position: relative;
+	display: inline-block;
+	padding: 1rem 4rem;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	color: $textColor;
+	border-radius: 0.5rem;
+}
+
+.btn-cubic {
+	margin-top: 2em;
+	color: $textColor;
+	background-color: #fff;
+	border: .1em solid $textColor;
+	border-bottom: .4em solid $textColor;
+}
+
+.btn-cubic:hover {
+	margin-top: 2.2em;
+	color: $bgColor;
+	background: $textColor;
+	border-bottom: .2em solid $textColor;
+}
+
+address {
+	width: 80%;
+	margin: 1em auto 0;
+	padding: 1em;
+	border: .1em solid $textColor;
+	@include ipPro {
+		width: 50%;
+	}
+}
+
+iframe {
+	width: 100%;
+	height: 50vh;
+	margin-top: 1em;
+}

@@ -1,0 +1,139 @@
+.wrapper {
+  width: 80vw;
+  margin-bottom: 15vh;
+  text-align: center;
+}
+@media screen and (min-width: 1020px) {
+  .wrapper {
+    width: 70vw;
+  }
+}
+
+.top-image {
+  width: 100%;
+  margin-top: 6vh;
+}
+@media screen and (min-width: 1020px) {
+  .top-image {
+    margin-top: 0;
+  }
+}
+
+h2 {
+  font-size: 2.8em;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+h3 {
+  font-size: 1.6em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+h4 {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 1.2% 0 0.5%;
+}
+
+.about {
+  width: 100%;
+  text-align: justify;
+}
+.about-container {
+  width: 75%;
+  margin: 6.5% auto 0;
+}
+.about-note {
+  width: 100%;
+  margin: 5% auto 0;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  margin: 5% auto 0;
+  padding: 1em;
+  border: solid 0.2em #333;
+  background: #fff;
+}
+@media screen and (min-width: 1020px) {
+  .menu-container {
+    width: 60%;
+  }
+}
+.menu-title {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-around;
+  border-bottom: 0.1em solid #333;
+  width: 90%;
+  margin: 0 auto 0.5em;
+}
+.menu-list {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 90%;
+}
+.menu-list-ttl {
+  width: 50%;
+}
+.menu-list-price {
+  width: 50%;
+}
+
+.btn {
+  font-size: 1.2em;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #333;
+  border-radius: 0.5rem;
+}
+
+.btn-cubic {
+  margin-top: 2em;
+  color: #333;
+  background-color: #fff;
+  border: 0.1em solid #333;
+  border-bottom: 0.4em solid #333;
+}
+
+.btn-cubic:hover {
+  margin-top: 2.2em;
+  color: #F5F5DC;
+  background: #333;
+  border-bottom: 0.2em solid #333;
+}
+
+address {
+  width: 80%;
+  margin: 1em auto 0;
+  padding: 1em;
+  border: 0.1em solid #333;
+}
+@media screen and (min-width: 1020px) {
+  address {
+    width: 50%;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 50vh;
+  margin-top: 1em;
+}/*# sourceMappingURL=top.css.map */

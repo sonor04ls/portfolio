@@ -1,0 +1,248 @@
+@charset "UTF-8";
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.btn-area {
+  margin-top: 60px;
+}
+
+dl {
+  font-size: 1rem;
+}
+
+/* チェックボックスのスタイル設定 */
+.checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5em;
+  position: relative;
+  cursor: pointer;
+}
+.checkbox label::before, .checkbox label:has(:checked)::after {
+  content: "";
+}
+.checkbox label::before {
+  width: 17px;
+  height: 17px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #333;
+}
+.checkbox label:has(:checked)::before {
+  background-color: #333;
+}
+.checkbox label:has(:checked)::after {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  transform: rotate(45deg);
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}
+
+/* テキストボックス */
+.text-box {
+  padding: 8px 10px;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  background: #f7f7f7;
+  color: #333;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.text-box::-moz-placeholder {
+  color: #999;
+}
+.text-box::placeholder {
+  color: #999;
+}
+.text-box:hover {
+  cursor: pointer;
+}
+
+/* 予約画面 */
+.reserve-title {
+  margin-top: 100px;
+}
+
+.reserve-contents {
+  width: 100%;
+  padding: 1.5em 1em;
+  background-color: #fff;
+  min-height: 600px;
+}
+.reserve-contents p {
+  font-size: 1rem;
+}
+.reserve-contents .reserve1 {
+  margin-top: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.reserve-contents .reserve1 dt {
+  margin-bottom: 5px;
+}
+.reserve-contents .reserve1 label {
+  margin-left: 30px;
+}
+.reserve-contents .reserve1 .reserve-btn {
+  color: #333;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.reserve-contents .reserve1 .reserve-btn:hover {
+  opacity: 0.7;
+}
+.reserve-contents .reserve1 .reserve-btn.ok {
+  background-color: #fff;
+}
+.reserve-contents .reserve1 .reserve-btn.ng {
+  background-color: #f44336;
+}
+
+/* 管理者画面用 */
+.admin-title {
+  margin-top: 20px;
+}
+
+/* 管理者用メニュー */
+.admin-menu {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 80%;
+  margin-top: 40px;
+}
+.admin-menu a {
+  flex: 1 1;
+  order: -1;
+  min-width: 70px;
+  padding: 0.7em 1em 0.5em;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 0;
+  background-color: #e9f0f6;
+  color: #535353;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+.admin-menu a:hover {
+  opacity: 0.8;
+}
+.admin-menu a:has(:checked) {
+  background-color: #fff;
+  border-color: #333333 #f0f0f0 #fff;
+  border-style: solid;
+  border-width: 4px 1px 1px;
+  border-radius: 5px;
+  color: #333333;
+}
+.admin-menu a:has(:checked) {
+  display: block;
+}
+
+.admin-contents {
+  width: 100%;
+  padding: 1.5em 1em;
+  background-color: #fff;
+  min-height: 600px;
+}
+.admin-contents p {
+  font-size: 1rem;
+}
+.admin-contents h3 {
+  margin-top: 30px;
+}
+.admin-contents.admin-page form {
+  margin-top: 60px;
+}
+.admin-contents.admin-page dl {
+  margin-bottom: 40px;
+}
+.admin-contents.admin-page dl dt {
+  margin-bottom: 10px;
+}
+.admin-contents.reserve-edit table {
+  margin: 50px auto;
+  font-size: 1rem;
+  text-align: left;
+}
+.admin-contents.reserve-edit table th,
+.admin-contents.reserve-edit table td {
+  padding-top: 30px;
+  padding-right: 10px;
+}
+.admin-contents.reserve-list {
+  height: 50%;
+}
+.admin-contents.reserve-list table {
+  margin: 50px auto;
+  font-size: 1rem;
+  text-align: left;
+}
+.admin-contents.reserve-list table thead {
+  display: block;
+  width: 100%;
+}
+.admin-contents.reserve-list table tbody {
+  display: block;
+  overflow-y: scroll;
+  max-height: 60vh;
+}
+.admin-contents.reserve-list table tr:first-child th {
+  border-bottom: 2px solid #333;
+}
+.admin-contents.reserve-list table tr:last-child {
+  border-bottom: 2px solid #333;
+}
+.admin-contents.reserve-list table th {
+  padding: 0px 15px 5px 10px;
+}
+.admin-contents.reserve-list table td {
+  padding: 6px 20px 6px 10px;
+  vertical-align: middle;
+  border-right: 1px solid #999;
+}
+.admin-contents.reserve-list table td:first-child {
+  border-left: 2px solid #000;
+}
+.admin-contents.reserve-list table td:last-child {
+  border-right: 2px solid #000;
+}
+.admin-contents.reserve-list table th,
+.admin-contents.reserve-list table td {
+  width: 10em;
+}
+.admin-contents.admin-edit p {
+  margin-bottom: 20px;
+}
+.admin-contents.admin-edit-fin p {
+  margin-top: 80px;
+}
+
+/* 詳細ボタン */
+.detail-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.detail-button:hover {
+  opacity: 0.7;
+}/*# sourceMappingURL=other.css.map */
