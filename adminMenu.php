@@ -5,6 +5,8 @@ if ($radio === 1) {
 	$ckd2 = 'checked';
 } elseif ($radio === 3) {
 	$ckd3 = 'checked';
+} elseif ($radio === 4) {
+	$ckd4 = 'checked';
 }
 ?>
 <div class="admin-menu">
@@ -20,5 +22,9 @@ if ($radio === 1) {
 	<a href="adminLogout.php">
 		<input type="radio" name="tab-1" <?= $ckd3 ?> />
 		ログアウト
+	</a>
+	<a href="adminMenuList.php">
+		<input type="radio" name="tab-1" <?= $ckd4 ?> />
+		メニュー編集
 	</a>
 </div>

@@ -1,4 +1,8 @@
 <?php
+session_start();
+// 不要なセッション削除
+unset($_SESSION['error']);
+unset($_SESSION['saved']);
 require './dbConnect.php';
 require './header.php';
 $menus = $db->query('SELECT * FROM menus');
@@ -63,11 +67,11 @@ $menus = $db->query('SELECT * FROM menus');
 		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3291.9447641498664!2d132.45651422616066!3d34.4027498491407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5bqD5bO25Z-O!5e0!3m2!1sja!2sjp!4v1704641447097!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<address>
 			店名: Lumiére
-		<br> 住所: 〒730-0011 広島県広島市中区基町２１−１
-			
+			<br> 住所: 〒730-0011 広島県広島市中区基町２１−１
+
 		</address>
 	</section>
-	
+
 	<section id="contact">
 		<h2>お問い合わせ</h2>
 		<p>ご質問やご予約に関するお問い合わせは<br class="sp-only">以下のアドレスまでメールをして頂くか、<br class="sp-only">お電話でお気軽にお問い合わせください。</p>
